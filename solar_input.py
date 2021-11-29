@@ -169,7 +169,10 @@ def build_graph(filename_stats):
 
         plt.show()
 
-
+def clear_file_stats(filename_stats):
+    file_stats = open(filename_stats, 'w')
+    file_stats.write('')
+    file_stats.close()
 
 # FIXME: хорошо бы ещё сделать функцию, сохранающую статистику в заданный файл...
 
